@@ -90,3 +90,19 @@ myAwesomeTuple5 = ('apple', 'apple', 'cherry', 323,4345, True, False, 3.14)
 print(len(myAwesomeTuple5))
 print(myAwesomeTuple5[-1])
 print(myAwesomeTuple5[1])
+
+myString = "Hello, World!"
+myList = [3,4,5,6]
+myTuple = (7,8,9)
+print(myString * 4)
+print(myList * 4)
+print(myTuple * 4)
+
+# method count()
+aa = (1, 2, 3, 4, 1, 2, 1, 1)
+print(aa.count(1))
+# method index()
+bbb = (12,34,56,78,90)
+print(f"The position of 3 in the tuple is: {aa.index(3)}")
+
+# tuple 
