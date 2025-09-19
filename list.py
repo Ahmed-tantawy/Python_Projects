@@ -68,7 +68,7 @@ print(xsp)
 # [1] Tuple items are Enclosed in paranthesis ()
 # [2] You can Remove items using del keyword
 # [3] Tuples are ordered, unchangeable, and allow duplicate values
-# [4]
+# [4] Operators: +, *, in, not in can be used with tuples, lists,  strings
 # [5]
 #---------------------------------------
 
@@ -84,3 +84,9 @@ print(myAwesomeTuple2[2])
 print(myAwesomeTuple2[0:])
 # myAwesomeTuple [2] = "orange" #Tuples are unchangeable, and you cannot change, add or remove items once the tuple is created   
 # print(myAwesomeTuple)    
+
+# Tuple itemes
+myAwesomeTuple5 = ('apple', 'apple', 'cherry', 323,4345, True, False, 3.14)
+print(len(myAwesomeTuple5))
+print(myAwesomeTuple5[-1])
+print(myAwesomeTuple5[1])
