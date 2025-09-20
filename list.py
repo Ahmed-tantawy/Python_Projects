@@ -199,5 +199,15 @@ print(setJ)
 #difference() - Return a set that contains the difference between two or more sets
 setK = {1,2,3,4,5}
 setL = {4,5,6,7,8}
-setM = setK.difference(setL)
+print(setK)
+print(setK.difference(setL)) # setK - setL
+
+print( "="*40)
+
+# difference_update() - Remove the items in this set that are also included in another, specified set
+setM = {1,2,3,4}
+setN = {1,2,3, "apple", "banana"}
+setM.difference_update(setN)
 print(setM)
+print( "="*40)
+
