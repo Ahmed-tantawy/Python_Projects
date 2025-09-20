@@ -105,4 +105,41 @@ print(aa.count(1))
 bbb = (12,34,56,78,90)
 print(f"The position of 3 in the tuple is: {aa.index(3)}")
 
-# tuple 
+# tuple Destruct
+
+aaaa = ("A", "B", 43,"C")
+x, y, _,z = aaaa
+print(x)
+print(y)
+print(z)
+
+# ------------------------
+# ----Set-----
+#------------------------
+# [1] Set items are Enclosed in curly brackets {}
+# [2] NOt ordered nor indexed
+# [3] Sets are unordered, unchangeable*, and do not allow duplicate values
+# [4] not sliceing and indexing
+
+
+mySet = {"apple", "banana", "cherry"}
+print(mySet)
+print(type(mySet))
+
+# print(mySet[0])
+# not sliceing and indexing
+# print(mySet[0:3])
+
+# Has only immutable data types
+# mySet2 = {"apple", "banana", "cherry", 1, 3.14, True, (1,2,3)}
+# print(mySet2)
+
+#items are Unique
+mySet4 = {1, 2, "apple", "one", "apple", 2}
+print(mySet4)
+
+# set methods
+# add() - Add an item to a set, if the item already exists, the set will not change
+mySet5 = {"apple", "banana", "cherry"}
+mySet5.add("orange")
+print(mySet5)
