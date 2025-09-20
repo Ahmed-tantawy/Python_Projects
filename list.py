@@ -150,5 +150,7 @@ print(mySet5)
 # union() - Return a set that contains all items from both sets, duplicates are excluded
 setA = {"a", "b", "c"}
 setB = {1, 2, 3}
-setC = setA.union(setB)
+setC = setA.union(setB, {4,5,6})
 print(setC)
+print (setA | setC)
+
