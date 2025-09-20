@@ -225,3 +225,18 @@ print(setO)
 print(setO.intersection_update(setP)) # e & f
 print(setO)
 print( "="*40) # separator
+
+# symmetric_difference() - Return a set, that is the symmetric difference of two sets
+setQ = {1,2,3,4,5}
+setR = {1,2,3,4 ,"apple", "banana"}
+print(setQ)
+print(setQ.symmetric_difference(setR)) # e ^ f
+print( "="*40) # separator
+
+#symmetric_difference_update() - Return a set, that is the symmetric difference of two sets
+setQq = {1,2,3,4,5}
+setRr = {1,2,3,4 ,"apple", "banana"}
+print(setQq)
+print(setQq.symmetric_difference_update(setRr)) # e ^ f
+print(setQq)
+print( "="*40) # separator
