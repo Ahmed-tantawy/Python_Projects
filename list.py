@@ -240,3 +240,9 @@ print(setQq)
 print(setQq.symmetric_difference_update(setRr)) # e ^ f
 print(setQq)
 print( "="*40) # separator
+
+# issubset() - Return True if all items in the set are present in another set
+setS = {1,2,3}
+setT = {1,2,3,4,5}
+print(setT.issuperset(setS))
+
