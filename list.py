@@ -170,3 +170,15 @@ print(setE)
 setE.add(6)
 print(setE)
 print(setF)
+
+# remove() - Remove the specified item
+setG = {1,2,3,4,5}
+g.remove(3)
+print(g)
+# remove(7)
+
+# discard() - Remove the specified item, if the item does not exist, do nothing
+setH = {1,2,3,4,5}
+setH.discard(10) #discard does not raise an error
+print(setH)
+
