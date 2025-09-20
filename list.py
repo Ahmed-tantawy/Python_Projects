@@ -154,3 +154,19 @@ setC = setA.union(setB, {4,5,6})
 print(setC)
 print (setA | setC)
 
+# add()
+
+setD= {"apple", "banana", "cherry"}
+setD.add("orange")
+print(setD)
+
+# copy() - Return a copy of the set
+
+setE = {1, 2, 3, 4, 5}
+setF = setE.copy()
+print(setF)
+print(setE)
+
+setE.add(6)
+print(setE)
+print(setF)
