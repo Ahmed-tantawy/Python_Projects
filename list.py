@@ -191,3 +191,13 @@ print(setI)
 setJ = {1,2,3}
 setJ.update([4,5,6])
 print(setJ)
+
+#mastering python sets
+#https://www.w3schools.com/python/python_sets_methods.asp
+#https://realpython.com/python-sets/
+
+#difference() - Return a set that contains the difference between two or more sets
+setK = {1,2,3,4,5}
+setL = {4,5,6,7,8}
+setM = setK.difference(setL)
+print(setM)
