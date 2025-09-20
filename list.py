@@ -143,3 +143,12 @@ print(mySet4)
 mySet5 = {"apple", "banana", "cherry"}
 mySet5.add("orange")
 print(mySet5)
+
+# clear() - Remove all items from the set
+mySet5.clear()
+print(mySet5)
+# union() - Return a set that contains all items from both sets, duplicates are excluded
+setA = {"a", "b", "c"}
+setB = {1, 2, 3}
+setC = setA.union(setB)
+print(setC)
