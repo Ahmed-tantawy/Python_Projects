@@ -173,8 +173,8 @@ print(setF)
 
 # remove() - Remove the specified item
 setG = {1,2,3,4,5}
-g.remove(3)
-print(g)
+setG.remove(3)
+print(setG)
 # remove(7)
 
 # discard() - Remove the specified item, if the item does not exist, do nothing
@@ -182,3 +182,12 @@ setH = {1,2,3,4,5}
 setH.discard(10) #discard does not raise an error
 print(setH)
 
+# pop() - Remove a random item
+setI = {1,2,3,4,5}
+setI.pop()
+print(setI)
+
+#update() - Update the set with the union of this set and others
+setJ = {1,2,3}
+setJ.update([4,5,6])
+print(setJ)
