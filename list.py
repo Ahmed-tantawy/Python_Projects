@@ -202,12 +202,26 @@ setL = {4,5,6,7,8}
 print(setK)
 print(setK.difference(setL)) # setK - setL
 
-print( "="*40)
+print( "="*40) # separator
 
 # difference_update() - Remove the items in this set that are also included in another, specified set
 setM = {1,2,3,4}
 setN = {1,2,3, "apple", "banana"}
 setM.difference_update(setN)
 print(setM)
-print( "="*40)
+print( "="*40) # separator
 
+# intersection() - Return a set, that is the intersection of two other sets
+setO = {1,2,3,4,5}
+setP = {4,5,6,7,8}
+print(setO)
+print(setO.intersection(setP)) # e & f
+print( "="*40) # separator
+
+# intersection_update() - Return a set, that is the intersection of two other sets
+setO = {1,2,3,4,"X", "apple"}
+setP = {2, "apple", "X"}
+print(setO)
+print(setO.intersection_update(setP)) # e & f
+print(setO)
+print( "="*40) # separator
