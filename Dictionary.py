@@ -118,4 +118,30 @@ user1 = {
 print(user1)
 print(user1.setdefault("age", 25)) # key does not exist, so it will
 print(user1)
+print("*" * 50)
 
+# popitem() - Removes the item with the specified key name
+user1.update({"country": "Egypt"})
+print(user1)
+print("*" * 50)
+print(user1.popitem())
+print(user1)
+
+view = {
+    "name": "Ahmed",
+    "age": 25,
+    "Country": "Egypt"
+    }
+print(view)
+#item() - Returns a list containing a tuple for each key value pair
+allItems = view.items()
+print(allItems)
+view.update({"age": 26})
+print(allItems)
+
+# fromkeys() - Returns a dictionary with the specified keys and value
+x = ('key1', 'key2', 'key3')
+y = 0
+newDict = dict.fromkeys(x, y)
+print(newDict)
+#---------------------------------------
