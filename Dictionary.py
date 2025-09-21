@@ -65,3 +65,47 @@ allFrameworks = {
 print(allFrameworks)
 print("*" * 40)
 print(len(allFrameworks["one"]))
+#----------------------------------------------
+# Dictionary Methods
+#----------------------------------------------
+
+
+print(user)
+# clear() - Empties the dictionary
+user.clear()
+print(user)
+
+print("*" * 50)
+
+# update() - Updates the dictionary with the specified key-value pairs
+
+member = {
+    "name": "Ahmed",
+    "age": 25,
+    "Country": "Egypt"
+}
+
+print(member)
+member.update({"Age": 26})
+member.update({"age": 26})
+print(member)
+
+# copy() - Returns a copy of the dictionary
+
+mainMember = {
+    "name": "Ahmed",
+    "age": 25,
+    "Country": "Egypt"
+    }
+print(mainMember)
+newMember = mainMember.copy()
+print("*" * 50)
+print(newMember)
+mainMember.update({"test": 26})
+print(mainMember)
+print(newMember)
+
+# keys() + values() - Returns a list of all the keys or values in the dictionary
+
+print(mainMember.keys())
+print(mainMember.values())  
