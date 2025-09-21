@@ -109,3 +109,13 @@ print(newMember)
 
 print(mainMember.keys())
 print(mainMember.values())  
+
+# setdefault() - Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+
+user1 = {
+    "name": "tom"
+    }
+print(user1)
+print(user1.setdefault("age", 25)) # key does not exist, so it will
+print(user1)
+
