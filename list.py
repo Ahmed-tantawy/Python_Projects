@@ -245,4 +245,12 @@ print( "="*40) # separator
 setS = {1,2,3}
 setT = {1,2,3,4,5}
 print(setT.issuperset(setS))
+print(setS.issuperset(setT))
+print( "="*40) # separator
+
+subset = {1,2,3}
+superset = {1,2,3,4,5,6,7,8,9}
+print(subset.issubset(superset))
+print(superset.issubset(subset))
+print( "="*40) # separator
 
