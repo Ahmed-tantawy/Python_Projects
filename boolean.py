@@ -122,13 +122,33 @@ print("=" *50)
 # input() - All input is string
 #----------------------------------------
 
-fname = input("Enter your first name: ")
-mname = input("Enter your middle name: ")
-lname = input("Enter your last name: ")
+# # fname = input("Enter your first name: ")
+# # mname = input("Enter your middle name: ")
+# # lname = input("Enter your last name: ")
 
-fname = fname.strip().capitalize()
-mname = mname.strip().capitalize()
-lname = lname.strip().capitalize()
+# # fname = fname.strip().capitalize()
+# # mname = mname.strip().capitalize()
+# # lname = lname.strip().capitalize()
 
-print(f"Hello {fname} {mname:.1s} {lname}, welcome to Python programming!")
+# print(f"Hello {fname} {mname:.1s} {lname}, welcome to Python programming!")
+
+#----------------------------------------
+# --- practice Slice Email-----
+#----------------------------------------
+print("=" *50)
+print("=" *50)
+
+theName = input("what\'s your name? ").strip().capitalize()
+theEmail = input("what\'s your email? ")
+
+thename=theName.strip().capitalize()
+theUserName= theEmail[:theEmail.index("@")]
+theWebsite= theEmail[theEmail.index("@")+1:]
+
+print(f"Hello {theName}, your email is {theEmail}")
+print(f"Your Username is {theUserName} and your email domain is {theWebsite}")
+
+
+# email = "Jhon_weak@gmail.com"
+# print(email[:email.index("@")])
 
