@@ -113,3 +113,22 @@ e =(("A", 1), ("B", 2), ("C", 3)) #set
 print(dict(d))
 print(dict(e))
 # print(dict(f))
+print("=" *50)
+print("=" *50)
+
+#----------------------------------------
+#---- User Input -----
+#----------------------------------------
+# input() - All input is string
+#----------------------------------------
+
+fname = input("Enter your first name: ")
+mname = input("Enter your middle name: ")
+lname = input("Enter your last name: ")
+
+fname = fname.strip().capitalize()
+mname = mname.strip().capitalize()
+lname = lname.strip().capitalize()
+
+print(f"Hello {fname} {mname:.1s} {lname}, welcome to Python programming!")
+
