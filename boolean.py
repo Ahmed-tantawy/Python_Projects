@@ -33,3 +33,15 @@ if age > 18 and country == "USA":
     print("You are eligible to vote")
 else:
     print("You are not eligible to vote")
+
+# or
+if age > 18 or country == "USA":
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")
+
+# not
+if not age > 18:
+    print("You are not eligible to vote")
+else:
+    print("You are eligible to vote")
