@@ -147,7 +147,7 @@ theUserName= theEmail[:theEmail.index("@")]
 theWebsite= theEmail[theEmail.index("@")+1:]
 
 print(f"Hello {theName}, your email is {theEmail}")
-print(f"Your Username is {theUserName} and your email domain is {theWebsite}")
+print(f"Your Username is {theUserName} \n your email domain is {theWebsite}")
 
 
 # email = "Jhon_weak@gmail.com"
