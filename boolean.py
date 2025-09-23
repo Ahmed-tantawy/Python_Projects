@@ -139,7 +139,8 @@ print("=" *50)
 print("=" *50)
 
 theName = input("what\'s your name? ").strip().capitalize()
-theEmail = input("what\'s your email? ")
+theEmail = input("what\'s your email? ").strip().lower()
+
 
 thename=theName.strip().capitalize()
 theUserName= theEmail[:theEmail.index("@")]
