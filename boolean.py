@@ -122,15 +122,15 @@ print("=" *50)
 # input() - All input is string
 #----------------------------------------
 
-# # fname = input("Enter your first name: ")
-# # mname = input("Enter your middle name: ")
-# # lname = input("Enter your last name: ")
+fname = input("Enter your first name: ")
+mname = input("Enter your middle name: ")
+lname = input("Enter your last name: ")
 
-# # fname = fname.strip().capitalize()
-# # mname = mname.strip().capitalize()
-# # lname = lname.strip().capitalize()
+fname = fname.strip().capitalize()
+mname = mname.strip().capitalize()
+lname = lname.strip().capitalize()
 
-# print(f"Hello {fname} {mname:.1s} {lname}, welcome to Python programming!")
+print(f"Hello {fname} {mname:.1s} {lname}, welcome to Python programming!")
 
 #----------------------------------------
 # --- practice Slice Email-----
@@ -153,3 +153,26 @@ print(f"Your Username is {theUserName} \n your email domain is {theWebsite}")
 # email = "Jhon_weak@gmail.com"
 # print(email[:email.index("@")])
 
+#----------------------------------------
+# ----Practical Your Age Full Details-----
+#----------------------------------------
+print("=" *50)
+print("=" *50)
+#input Age
+theAge = int(input("How old are you? ").strip())
+
+# Get Age in All Time Units
+ageMonths = theAge * 12
+ageWeeks = theAge * 52
+ageDays = theAge * 365
+ageHours = ageDays * 24
+ageMinutes = ageHours * 60
+ageSeconds = ageMinutes * 60
+
+print(f"You Lived for: ")
+print(f"{ageMonths} Months")
+print(f"{ageWeeks:,} Weeks")
+print(f"{ageDays:,} Days")
+print(f"{ageHours:,} Hours")
+print(f"{ageMinutes:,} Minutes")
+print(f"{ageSeconds:,} Seconds")
