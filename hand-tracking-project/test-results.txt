@@ -1,0 +1,9 @@
+Hand Tracking Docker - Test Results
+====================================
+Date: Mon Dec  1 22:11:33 CET 2025
+
+Docker Image:
+REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
+hand-tracker   test      44abc8955287   15 seconds ago   1.31GB
+
+Tests: ALL PASSED ✓

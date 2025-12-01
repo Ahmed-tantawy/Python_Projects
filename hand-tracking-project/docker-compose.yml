@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  hand-tracker:
+    build: .
+    container_name: hand-tracking-app
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      # For X11 display on Linux
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      # For camera access
+      - /dev/video0:/dev/video0
+    devices:
+      # Camera device
+      - /dev/video0:/dev/video0
+    network_mode: host
+    stdin_open: true
+    tty: true

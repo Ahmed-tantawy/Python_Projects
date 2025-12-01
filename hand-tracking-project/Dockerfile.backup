@@ -1,0 +1,44 @@
+# Use Python 3.11 slim image
+FROM python:3.11-slim
+
+# Install system dependencies for OpenCV and GUI
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libgtk2.0-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all Python files
+COPY *.py .
+
+# Copy README files if they exist (using wildcard to avoid errors)
+COPY README*.md ./
+
+# Set display environment variable for GUI
+ENV DISPLAY=:0
+
+# Default command - check which file exists and run it
+CMD if [ -f "hand_tracker_enhanced.py" ]; then \
+        python hand_tracker_enhanced.py; \
+    elif [ -f "hand.py" ]; then \
+        python hand.py; \
+    elif [ -f "hand_tracker.py" ]; then \
+        python hand_tracker.py; \
+    else \
+        echo "No hand tracking script found!"; \
+        exit 1; \
+    fi
